@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["query"]["fname"].value;
+  if (x == "") {
+    alert("First name must be filled out");
+    return false;
+  }
+}
+function validateForm() {
+  var x = document.forms["query"]["lname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+</script>
+<style>
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 2px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+</style>
+	<title>Contact Us</title>
+	<link rel="icon" href="Images/icon.png">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class = "whitearea">
+<header>
+	<h1>
+		<a href="index.html">Ghoomo Pakistan</a>
+	</h1>
+</header>
+
+<nav id = "navbar">
+		<ul>
+			<li><a href="index.html"> Home </a></li>
+			<li>
+			<div class="dropdown">
+			 <button class="dropbtn">Destinations <i class="arrow down"></i>
+			 </button>
+			 <div class="dropdown-content">
+			   		  <a href="punjab.html">Punjab</a>
+            <a href="sindh.html">Sindh</a>
+            <a href="balochistan.html">Balochistan</a>
+            <a href="kpk.html">Khyber Pakhtunkwa</a>
+            <a href="gilgit.html">Gilgit-Baltistan</a>
+            <a href="kashmir.html">Azad Kashmir</a>
+			</div>
+			</li>
+			<li><a href="#"> Contact Us </a></li>
+			<li><a href="aboutus.html"> About Us </a></li>
+			<li>
+            <div class="dropdown">
+			 <button class="dropbtn">More
+  			 <i class="arrow down"></i>
+			 </button>
+			 <div class="dropdown-content">
+			   		<a href="sitemap.html">Site Map</a>
+			</div>
+		</div>
+			</li>
+	    </ul>
+     </div>
+</nav>
+<section>
+	<div id= welcome>
+	<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <div id="query" style="text-align:left">
+    <p>Leave us a message if you have any query:</p>
+ </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <form name = 'query' action="thanks.html" onsubmit="return validateForm()" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="Email">Email</label>
+        <input type="text" id="Email" name="Email" placeholder= "Email">
+        <label for="subject">Query/Complaint</label>
+        <textarea id="subject" name="subject" placeholder="Query/Complaint" style="height:170px"></textarea>
+        <div id='sub'>
+        <input type="submit" value="SUBMIT">
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<section id= "Elecmail">
+<h2> You can also reach us at </h2>
+<h3>
+    <a href="mailto:ghoomopakistan007@gmail.com">ghoomopakistan007@gmail.com</a>
+</h3>
+</section>
+
+</body>
+</html>
