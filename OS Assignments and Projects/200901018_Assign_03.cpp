@@ -76,9 +76,10 @@ int main(){
     cout << "There are 12 Cores on this Processor\n";
     cout << "Enter size of array: ";
     cin >> arr_size;
-    array1 = new int[arr_size];
+    int element;
     for (int i = 0; i < arr_size; i++){
-        array1[i] = (rand() % 100);
+        cout << "Enter element " << i + 1 << " : "; cin >> element;
+        array1[i] = element;
     }
     cout << "Given array is \n";
     for (int i = 0; i < arr_size; i++)
