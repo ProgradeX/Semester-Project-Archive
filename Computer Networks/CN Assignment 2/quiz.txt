@@ -1,0 +1,149 @@
+What does "IP" stand for?
+Internet Protocol
+Internet Port
+Internal Processing
+Internchangeable Port
+
+Which version of Internet Protocol is currently in use?
+IPv4
+IPv5
+IPv6
+IPv8
+
+How many bits are used to represent an IPv4 address?
+32 bits
+16 bits
+64 bits
+128 bits
+
+What is the maximum number of unique IP addresses that can be created using IPv4?
+2,147,483,648
+18,446,744,073,709,551,616
+256
+4,294,967,296
+
+What is the purpose of an IP address?
+To identify a device on the network
+To encrypt data transmitted over a network
+To control the flow of data over a network
+To authenticate users on a network
+
+What is the main difference between IPv4 and IPv6?
+IPv6 has a larger address space than IPv4
+IPv4 is faster than IPv6
+IPv4 is more secure than IPv6 
+IPv6 is only used for mobile devices
+
+How many bits are used to represent an IPv6 address?
+128 bits
+16 bits
+32 bits 
+64 bits
+
+Which protocol is used to assign IP addresses to devices on a network?
+DHCP
+HTTP
+DNS
+FTP
+
+What is subnetting?
+Dividing a network into smaller subnetworks
+Combining multiple networks into a larger network
+Creating a network from scratch
+Assigning IP addresses to devices on a network
+
+What is the purpose of NAT (Network Address Translation)?
+To allow devices on a private network to access the internet
+To translate IP addresses into domain names
+To assign IP addresses to devices on a network
+To encrypt data transmitted over a network
+
+What is the format of an IPv4 address?
+4 groups of 8 bits each
+4 groups of 4 hexadecimal digits
+4 groups of 2 hexadecimal digits
+4 groups of 16 bits each
+
+What is the purpose of a subnet mask?
+To identify the network portion of an IP address
+To identify the host portion of an IP address
+To convert an IP address into a domain name
+To encrypt data transmitted over a network
+
+Which IPv6 address type is used for multicast communication?
+Multicast
+Unicast
+Anycast
+Broadcast
+
+Which of the following is NOT a private IP address range?
+169.254.0.0/16
+10.0.0.0/8
+172.16.0.0/12
+192.168.0.0/16
+
+What is the purpose of ICMP (Internet Control Message Protocol)?
+To report errors and status information about network conditions
+To encrypt data transmitted over a network
+To assign IP addresses to devices on a network
+To control the flow of data over a network
+
+What is a default gateway?
+A device that connects multiple networks together
+An IP address assigned to a device on a network
+A protocol used for secure data transfer over a network
+A software program used to manage network traffic
+
+What is an IP address conflict?
+When two or more devices on a network have the same IP address
+When a device cannot connect to a network due to an incorrect subnet mask
+When a device cannot obtain an IP address from a DHCP server
+When a network experiences congestion due to too much traffic
+
+Which of the following is an example of an IPv6 address?
+2001:0db8:85a3:0000:0000:8a2e:0370:7334
+192.168.1.1
+127.0.0.1
+255.255.255.0
+
+What is the purpose of a DNS (Domain Name System) server?
+To translate domain names into IP addresses
+To assign IP addresses to devices on a network
+To control the flow of data over a network
+To encrypt data transmitted over a network
+
+Which protocol is used for secure data transfer over a network?
+HTTPS
+HTTP
+FTP
+SMTP
+
+What is the maximum size of an IPv4 datagram?
+65535 bytes
+64 bytes
+256 bytes
+1024 bytes
+
+Which field in an IPv4 datagram specifies the number of bytes in the header?
+Header length
+Total length
+Identification
+Time-to-Live
+
+What is the purpose of the checksum field in an IPv4 datagram?
+To verify the integrity of the data in the header and payload
+To specify the number of bytes in the header
+To identify the destination address
+To indicate the protocol being used
+
+Which field in an IPv6 datagram is used to indicate the next header?
+Next header
+Source address
+Destination address
+Payload length
+
+What is the purpose of the flow label field in an IPv6 datagram?
+To identify a particular flow of data that should be given special handling by routers
+To identify the destination address
+To indicate the protocol being used
+To specify the number of bytes in the header
