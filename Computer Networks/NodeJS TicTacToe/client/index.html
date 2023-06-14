@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body style="margin: 0; padding: 0">
+        <header class="page-header">
+            <h1>Tic Tac Toe!</h1>
+        </header>
+        <div class="main-interface">
+            <div class="game">
+                <table class="board">
+                    <tr>
+                      <td colspan="1"><button id="r0c0" class="gridbutton"></button></td>
+                      <td colspan="1"><button id="r0c1" class="gridbutton"></button></td>
+                      <td colspan="1"><button id="r0c2" class="gridbutton"></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><button id="r1c0" class="gridbutton"></button></td>
+                      <td colspan="1"><button id="r1c1" class="gridbutton"></button></td>
+                      <td colspan="1"><button id="r1c2" class="gridbutton"></button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="1"><button id="r2c0" class="gridbutton"></button></td>
+                      <td colspan="1"><button id="r2c1" class="gridbutton"></button></td>
+                      <td colspan="1"><button id="r2c2" class="gridbutton"></button></td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="chat">
+                <div class="state-banner">
+                    <div id="announcer">Waiting for opponent...</div>
+                </div>
+                <h3>CHAT</h3>
+                <form id="form" action="">
+                    <input id="input" autocomplete="off" /><button>Send</button>
+                </form>
+                <ul id="messages">
+                </ul>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="footer-container">
+                <p>Made By: 200901018 - Muhammad Tayyab</p>
+                <p>Submitted 01-Jun-23</p>
+            </div> 
+        </footer>
+        
+
+    </body>
+    <script>
+        var messages = document.getElementById('messages');
+        var form = document.getElementById('form');
+        var input = document.getElementById('input');
+
+        function scrollToBottom() {
+            var messages = document.getElementById("messages");
+            messages.scrollTop = messages.scrollHeight;
+        }
+
+        // on chat message
+        socket.on('chat.message', function(msg) {
+            var item = document.createElement('li');
+            item.textContent = msg;
+            messages.appendChild(item);
+            //window.scrollTo(0, document.body.scrollHeight);
+            scrollToBottom();
+        });
+
+        // send chat message
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (input.value) {
+                socket.emit('chat.message', input.value);
+                input.value = '';
+            }
+        });
+    </script>
+</html>
